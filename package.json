@@ -1,0 +1,15 @@
+{
+  "name": "bashrc",
+  "version": "0.1.0",
+  "description": "在新的 CLI 環境快速取得基本 bash 設定：source <(npx louisje/bashrc)",
+  "bin": {
+    "bashrc": "bin/bashrc.js"
+  },
+  "files": [
+    "bin"
+  ],
+  "engines": {
+    "node": ">=14"
+  },
+  "license": "MIT"
+}
