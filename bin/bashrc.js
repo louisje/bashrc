@@ -27,10 +27,34 @@ const sections = [
     ].join('\n');
   },
 
+  function localBinPath() {
+    return [
+      'if [[ ":$PATH:" != *":$HOME/.local/bin:"* ]]; then',
+      '  export PATH="$HOME/.local/bin:$PATH"',
+      'fi',
+    ].join('\n');
+  },
+
   function aliases() {
     return [
       "alias sudo='sudo '",
-      "alias ll='ls -Floart --color'",
+      "alias ..='cd ..'",
+    ].join('\n');
+  },
+
+  function llAlias() {
+    return [
+      'if ! command -v ll >/dev/null 2>&1; then',
+      "  alias ll='ls -Flart --color'",
+      'fi',
+    ].join('\n');
+  },
+
+  function zAlias() {
+    return [
+      'if ! command -v z >/dev/null 2>&1; then',
+      "  alias z='cd'",
+      'fi',
     ].join('\n');
   },
 

@@ -12,8 +12,11 @@ source <(npx louisje/bashrc)
 
 ## 目前內容
 
+- 若 `~/.local/bin` 不在 `$PATH` 中，加入到 `$PATH` 最前面
 - `alias sudo='sudo '`：讓 `sudo` 後面接的指令也能套用 alias 展開
-- `alias ll='ls -Floart --color'`
+- `alias ..='cd ..'`
+- 若 `ll` 指令不存在，設定 `alias ll='ls -Flart --color'`
+- 若 `z` 指令不存在，設定 `alias z='cd'`
 
 之後會依需求持續補上更多 alias / prompt / function。
 
