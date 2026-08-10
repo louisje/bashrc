@@ -10,6 +10,12 @@ source <(npx louisje/bashrc)
 
 會依目前環境動態組合並輸出一段 bash 設定，套用到目前的 shell。
 
+另一種用法：在新環境直接產生一份現成的 `~/.bashrc`：
+
+```bash
+npx louisje/bashrc > ~/.bashrc
+```
+
 ## 目前內容
 
 - 若 `~/.local/bin` 不在 `$PATH` 中，加入到 `$PATH` 最前面
