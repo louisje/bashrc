@@ -45,7 +45,15 @@ const sections = [
   function llAlias() {
     return [
       'if ! command -v ll >/dev/null 2>&1; then',
-      "  alias ll='ls -Flart --color'",
+      '  if command -v eza >/dev/null 2>&1; then',
+      "    alias ll='eza -F -lar --sort=modified --color=auto'",
+      '  elif command -v lsd >/dev/null 2>&1; then',
+      "    alias ll='lsd -Flart --color=auto'",
+      '  elif command -v exa >/dev/null 2>&1; then',
+      "    alias ll='exa -F -lar --sort=modified --color=auto'",
+      '  else',
+      "    alias ll='ls -Flart --color'",
+      '  fi',
       'fi',
     ].join('\n');
   },
