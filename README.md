@@ -6,6 +6,8 @@
 
 ```bash
 source <(npx louisje/bashrc)
+# 或
+source <(bunx louisje/bashrc)
 ```
 
 會依目前環境動態組合並輸出一段 bash 設定，套用到目前的 shell。
@@ -14,6 +16,8 @@ source <(npx louisje/bashrc)
 
 ```bash
 npx louisje/bashrc > ~/.bashrc
+# 或
+bunx louisje/bashrc > ~/.bashrc
 ```
 
 ## 目前內容
