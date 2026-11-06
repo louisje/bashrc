@@ -5,7 +5,7 @@
 ## 使用方式
 
 ```bash
-source <(npx louisje/bashrc)
+source <(npx -y louisje/bashrc)
 ```
 
 會依目前環境動態組合並輸出一段 bash 設定，套用到目前的 shell。
@@ -13,7 +13,7 @@ source <(npx louisje/bashrc)
 另一種用法：在新環境直接產生一份現成的 `~/.bashrc`：
 
 ```bash
-npx louisje/bashrc > ~/.bashrc
+npx -y louisje/bashrc > ~/.bashrc
 ```
 
 ## 目前內容
