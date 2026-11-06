@@ -66,8 +66,9 @@ const sections = [
     ].join('\n');
   },
 
-  // TODO: PS1 / prompt 區塊
-  // function prompt() { ... }
+  function prompt() {
+    return "PS1='\\u@\\h:\\w\\$ '";
+  }
 
   // TODO: 常用 function（例如 mkcd, extract）
   // function functions() { ... }
