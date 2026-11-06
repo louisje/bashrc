@@ -2,7 +2,7 @@
 'use strict';
 
 /**
- * 用法： source <(npx louisje/bashrc)
+ * 用法： source <(npx -y louisje/bashrc)
  *
  * 這個腳本會依照目前環境（OS、已安裝工具等）動態組合出一段 bash 設定，
  * 印到 stdout 讓使用者用 source 套用。
