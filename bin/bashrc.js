@@ -67,7 +67,7 @@ const sections = [
   },
 
   function prompt() {
-    return "PS1='[\\u@\\h:\\w] \\$ '";
+    return "PS1='[\\u@\\h:\\w]\\$ '";
   }
 
   // TODO: 常用 function（例如 mkcd, extract）
